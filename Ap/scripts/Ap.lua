@@ -346,7 +346,7 @@ OnQuest = function(questId, stage)
   for i in pairs(quests) do
     if tostring(questId) == quests[i] then
       if tostring(stage) == quest_stage[i] then
-        SendLocation(i + 3000)
+        SendLocation((i / 2) + 3000)
       end
     end
    end
